@@ -1,4 +1,4 @@
-package main
+package service
 
 import (
 	"context"
@@ -34,7 +34,7 @@ func (s *service) FindEmployee(id string) (*pb.FindEmployeeResponse, error) {
 }
 
 func (s *service) ListEmployee() (*pb.ListEmployeeResponse, error) {
-	res, err := s.client.ListEmployee(context.Background(), nil)
+	res, err := s.client.ListEmployee(context.Background(), &pb.ListEmployeeRequest{})
 	if err != nil {
 		return nil, fmt.Errorf("failed to call ListEmployee: %w", err)
 	}

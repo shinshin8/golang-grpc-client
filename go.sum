@@ -94,8 +94,10 @@ github.com/rogpeppe/fastuuid v1.2.0/go.mod h1:jVj6XXZzXRy/MSR5jhDC/2q6DgLz+nrA6L
 github.com/rogpeppe/go-internal v1.6.1/go.mod h1:xXDCJY+GAPziupqXw64V24skbSoqbTEfhy4qGm1nDQc=
 github.com/rogpeppe/go-internal v1.8.0 h1:FCbCCtXNOY3UtUuHUYaghJg4y7Fd14rXifAYUAtL9R8=
 github.com/rogpeppe/go-internal v1.8.0/go.mod h1:WmiCO8CzOY8rg0OYDC4/i/2WRWAB6poM+XZ2dLUbcbE=
-github.com/shinshin8/golang-grpc-protobuf v0.0.0-20220213084450-2598ea998033 h1:9AxgyIVGaOUNgg63Cg4tN4xFtO59+SEwqv1jJrgexu0=
-github.com/shinshin8/golang-grpc-protobuf v0.0.0-20220213084450-2598ea998033/go.mod h1:4r+vd1a+sarXmVI5p7QFQNwTxcIjC5GiEf9gPxnSJlk=
+github.com/shinshin8/golang-grpc-protobuf v0.0.0-20220220084535-5b68aeb5a58e h1:z91QK10IoqGkGWvzxHN+8jRoDuW99ieY9JCmWcjUXFM=
+github.com/shinshin8/golang-grpc-protobuf v0.0.0-20220220084535-5b68aeb5a58e/go.mod h1:4r+vd1a+sarXmVI5p7QFQNwTxcIjC5GiEf9gPxnSJlk=
+github.com/shinshin8/golang-grpc-protobuf v0.0.0-20220228124156-2244d65df8ba h1:Gx/ER70FM/AcW88iOi0gCJ7nEcMMdiDlsjSckGzKKIE=
+github.com/shinshin8/golang-grpc-protobuf v0.0.0-20220228124156-2244d65df8ba/go.mod h1:4r+vd1a+sarXmVI5p7QFQNwTxcIjC5GiEf9gPxnSJlk=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/stretchr/testify v1.4.0/go.mod h1:j7eGeouHqKxXV5pUuKE4zz7dFj8WfuZ+81PSLYec5m4=

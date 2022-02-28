@@ -1,7 +1,8 @@
-package main
+package handler
 
 import (
 	"github.com/gin-gonic/gin"
+	service2 "github.com/shinshin8/golang-grpc-client/service"
 	"log"
 	"net/http"
 )
@@ -12,10 +13,10 @@ type Handler interface {
 }
 
 type ginHandler struct {
-	service Service
+	service service2.Service
 }
 
-func NewHandler(service Service) Handler {
+func NewHandler(service service2.Service) Handler {
 	return &ginHandler{service: service}
 }
 
@@ -35,7 +36,6 @@ func SetRoute(handler Handler) func(*gin.Engine) *gin.Engine {
 			},
 		}
 		api := engine.Group("/company")
-		api.GET(":/id", handler.GetEmployee)
 		for path, route := range routes {
 			api.Handle(route.method, path, route.fn)
 		}
@@ -44,7 +44,7 @@ func SetRoute(handler Handler) func(*gin.Engine) *gin.Engine {
 }
 
 func (g *ginHandler) GetEmployee(c *gin.Context) {
-	entity, err := g.service.FindEmployee(c.Query("id"))
+	entity, err := g.service.FindEmployee(c.Param("id"))
 	if err != nil {
 		log.Fatal(err)
 	}
